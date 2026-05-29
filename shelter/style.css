@@ -128,3 +128,39 @@ h2 {
   line-height: 130%;
   letter-spacing: 0.06em;
 }
+
+/* About */
+
+.about_content {
+  display: flex;
+  gap: 120px;
+  padding: 80px 40px 100px 40px;
+  justify-self: center;
+}
+
+.about_content_right {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 430px;
+}
+
+h3 {
+  color: var(--color-dark-l, rgba(84, 84, 84, 1));
+
+  font-family: "Georgia";
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+}
+
+.subheading_dark {
+  color: var(--color-dark-xl, rgba(76, 76, 76, 1));
+
+  font-family: "Arial";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0px;
+}
