@@ -30,7 +30,8 @@ header {
 .header_content {
   display: flex;
   justify-content: space-between;
-  margin: 30px 40px 0 40px;
+  padding-top: 30px;
+  margin: 0 40px 0 40px;
 }
 
 h1 {
@@ -41,6 +42,17 @@ h1 {
   font-weight: 400;
   line-height: 110%;
   letter-spacing: 0.06em;
+}
+
+.header_logo p {
+  padding-left: 4px;
+  color: var(--color-light-xl, rgba(255, 255, 255, 1));
+
+  font-family: "Arial";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 10%;
 }
 
 .nav_list {
@@ -59,4 +71,60 @@ h1 {
   font-weight: 400;
   line-height: 160%;
   letter-spacing: 0px;
+}
+
+/* Start screen */
+
+.start_screen {
+  background-color: #5b483a;
+  padding-top: 60px;
+}
+
+.start_screen_content {
+  display: flex;
+  gap: 42px;
+  margin: 0px 40px 0 40px;
+}
+
+.start_screen_content_left {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  max-width: 460px;
+  padding-top: 163px;
+}
+
+h2 {
+  color: var(--color-light-xl, rgba(255, 255, 255, 1));
+
+  font-family: "Georgia";
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0%;
+}
+
+.start_screen_content_left p {
+  color: var(--color-dark-s, rgba(205, 205, 205, 1));
+
+  font-family: "Arial";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0px;
+}
+
+.start_screen_button {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 15px 45px;
+  border-radius: 100px;
+  background: var(--color-primary, rgba(241, 205, 179, 1));
+  color: var(--color-dark-3xl, rgba(41, 41, 41, 1));
+
+  font-family: "Georgia";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0.06em;
 }
