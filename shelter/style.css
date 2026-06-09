@@ -44,6 +44,12 @@ h1 {
   letter-spacing: 0.06em;
 }
 
+.header_logo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .header_logo p {
   padding-left: 4px;
   color: var(--color-light-xl, rgba(255, 255, 255, 1));
