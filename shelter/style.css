@@ -205,3 +205,65 @@ h3 {
   line-height: 115%;
   letter-spacing: 0.06em;
 }
+/* Donation */
+
+.donation {
+  background: var(--color-light-l, rgba(246, 246, 246, 1));
+}
+
+.donation_content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 80px 182px 100px 183px;
+}
+
+.donation_content_right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.donation_subheading {
+  color: var(--color-dark-l, rgba(84, 84, 84, 1));
+
+  font-family: "Georgia";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+}
+
+.credit_card {
+  border-radius: 9px;
+  background: var(--color-primary, rgba(241, 205, 179, 1));
+}
+
+.credit_card_content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 15px;
+}
+
+.credit_card_numbers {
+  color: var(--color-dark-l, rgba(84, 84, 84, 1));
+
+  font-family: "Georgia";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+}
+
+.subheading_light {
+  color: var(--color-dark-m, rgba(178, 178, 178, 1));
+
+  font-family: "Arial";
+  font-style: Italic;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+}
