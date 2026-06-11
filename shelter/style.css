@@ -121,18 +121,7 @@ h2 {
 }
 
 .start_screen_button {
-  display: inline-block;
   align-self: flex-start;
-  padding: 15px 45px;
-  border-radius: 100px;
-  background: var(--color-primary, rgba(241, 205, 179, 1));
-  color: var(--color-dark-3xl, rgba(41, 41, 41, 1));
-
-  font-family: "Georgia";
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 130%;
-  letter-spacing: 0.06em;
 }
 
 /* About */
@@ -149,6 +138,7 @@ h2 {
   flex-direction: column;
   gap: 25px;
   max-width: 430px;
+  align-self: center;
 }
 
 h3 {
@@ -170,6 +160,97 @@ h3 {
   line-height: 160%;
   letter-spacing: 0px;
 }
+
+/* Pets */
+.pets {
+  background-color: var(--color-light-l, rgba(246, 246, 246, 1));
+}
+
+.pets_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 60px;
+  padding: 80px 40px 100px 40px;
+}
+
+.slider_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 53px;
+}
+
+.slider_track {
+  display: flex;
+  gap: 90px;
+}
+
+.pet_card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  border-radius: 9px;
+  background: var(--color-light-s, rgba(250, 250, 250, 1));
+}
+
+.card_title {
+  color: var(--color-dark-l, rgba(84, 84, 84, 1));
+  font-family: "Georgia", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.06em;
+}
+
+.pet_card_btn {
+  box-sizing: border-box;
+  padding: 15px 45px;
+  border: 2px solid var(--color-primary, rgba(241, 205, 179, 1));
+  border-radius: 100px;
+  background: var(--color-light-s, rgba(250, 250, 250, 1));
+  color: var(--color-dark-3xl, rgba(41, 41, 41, 1));
+
+  font-family: "Georgia";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.btn_primary {
+  display: inline-block;
+
+  padding: 15px 45px;
+  border-radius: 100px;
+  background: var(--color-primary, rgba(241, 205, 179, 1));
+  color: var(--color-dark-3xl, rgba(41, 41, 41, 1));
+
+  font-family: "Georgia";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+}
+
+.slider_btn {
+  box-sizing: border-box;
+  width: 52px;
+  height: 52px;
+  border: 2px solid var(--color-primary, rgba(241, 205, 179, 1));
+  background: var(--color-light-s, rgba(250, 250, 250, 1));
+  border-radius: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
 /* Help */
 .help_content {
   display: flex;
@@ -205,6 +286,7 @@ h3 {
   line-height: 115%;
   letter-spacing: 0.06em;
 }
+
 /* Donation */
 
 .donation {
