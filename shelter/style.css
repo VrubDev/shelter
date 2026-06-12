@@ -252,6 +252,11 @@ h3 {
   font-weight: 400;
   line-height: 130%;
   letter-spacing: 0.06em;
+  transition: background-color 0.3s ease;
+}
+
+.btn_primary:hover {
+  background-color: var(--color-primary-light, rgba(253, 220, 196, 1));
 }
 
 .slider_btn {
@@ -337,6 +342,7 @@ h3 {
 .credit_card {
   border-radius: 9px;
   background: var(--color-primary, rgba(241, 205, 179, 1));
+  cursor: pointer;
 }
 
 .credit_card_content {
@@ -414,6 +420,31 @@ footer h3 {
 }
 
 /* Our pets page */
+
+.header_light {
+  background-color: #ffffff;
+  padding-bottom: 30px;
+}
+
+.header_light h1 {
+  color: var(--color-dark-l, rgba(84, 84, 84, 1));
+}
+
+.header_light .header_logo p {
+  color: var(--color-dark-3xl, rgba(41, 41, 41, 1));
+}
+
+.header_light .nav_link {
+  color: var(--color-dark-l, rgba(84, 84, 84, 1));
+}
+
+.header_light .nav_link:hover {
+  color: #292929;
+}
+
+.header_light .nav_link_active {
+  color: #292929;
+}
 
 .our_pets {
   background: var(--color-light-l, rgba(246, 246, 246, 1));
