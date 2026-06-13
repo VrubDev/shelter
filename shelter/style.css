@@ -38,7 +38,7 @@ header {
   margin: 0 40px 0 40px;
 }
 
-h1 {
+.logo_title {
   color: var(--color-primary);
 
   font-family: "Georgia", serif;
@@ -117,7 +117,7 @@ h1 {
   padding-top: 163px;
 }
 
-h2 {
+.start_screen_title {
   color: var(--color-light-xl, rgba(255, 255, 255, 1));
 
   font-family: "Georgia";
@@ -158,7 +158,7 @@ h2 {
   align-self: center;
 }
 
-h3 {
+.section_title {
   color: var(--color-dark-l, rgba(84, 84, 84, 1));
 
   font-family: "Georgia";
@@ -391,7 +391,7 @@ footer {
   padding: 40px 40px 0 40px;
 }
 
-footer h3 {
+.footer_section_title {
   color: var(--color-light-xl, rgba(255, 255, 255, 1));
 }
 
@@ -432,7 +432,7 @@ footer h3 {
   padding-bottom: 30px;
 }
 
-.header_light h1 {
+.header_light span {
   color: var(--color-dark-l, rgba(84, 84, 84, 1));
 }
 
