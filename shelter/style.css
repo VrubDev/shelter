@@ -478,6 +478,7 @@ footer {
 
 .our_pets {
   background: var(--color-light-l, rgba(246, 246, 246, 1));
+  padding-top: 120px;
 }
 
 .our_pets_content {
