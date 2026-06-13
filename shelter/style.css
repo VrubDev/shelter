@@ -1,5 +1,6 @@
 :root {
   --color-primary: #f1cdb3;
+  --color-light-xl: #ffffff;
 }
 
 * {
@@ -239,6 +240,16 @@ header {
   letter-spacing: 0.06em;
   cursor: pointer;
   margin-bottom: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.pet_card:hover {
+  background-color: var(--color-light-xl, rgba(255, 255, 255, 1));
+}
+
+.pet_card:hover .pet_card_btn {
+  background: var(--color-primary-light, rgba(253, 220, 196, 1));
+  border: 2px solid var(--color-primary-light, rgba(253, 220, 196, 1));
 }
 
 .btn_primary {
