@@ -284,6 +284,14 @@ header {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.slider_btn:hover {
+  background-color: var(--color-primary-light, rgba(253, 220, 196, 1));
+  border-color: var(--color-primary-light, rgba(253, 220, 196, 1));
 }
 
 /* Help */
