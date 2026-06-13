@@ -29,7 +29,11 @@ ul {
 /* Header */
 
 header {
-  background-color: #5b483a;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
 }
 
 .header_content {
@@ -100,8 +104,10 @@ header {
 /* Start screen */
 
 .start_screen {
-  background-color: #5b483a;
-  padding-top: 90px;
+  padding-top: 180px;
+  background-image:
+    url(./img/noise_transparent@2x.png),
+    radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
 }
 
 .start_screen_content {
@@ -399,11 +405,8 @@ header {
 footer {
   background-color: #1a1a1c;
   background-image:
-    url(./img/footer-background.jpg),
+    url(./img/noise_transparent@2x.png),
     radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
-
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .footer_content {
