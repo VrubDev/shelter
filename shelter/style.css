@@ -1,6 +1,14 @@
 :root {
   --color-primary: #f1cdb3;
+  --color-primary-light: #fddcc4;
   --color-light-xl: #ffffff;
+  --color-light-l: #f6f6f6;
+  --color-light-s: #fafafa;
+  --color-dark-s: #cdcdcd;
+  --color-dark-m: #b2b2b2;
+  --color-dark-l: #545454;
+  --color-dark-xl: #4c4c4c;
+  --color-dark-3xl: #292929;
 }
 
 * {
@@ -61,7 +69,7 @@ header {
 
 .header_logo p {
   padding-left: 4px;
-  color: var(--color-light-xl, rgba(255, 255, 255, 1));
+  color: var(--color-light-xl);
 
   font-family: "Arial";
   font-size: 13px;
@@ -79,7 +87,7 @@ header {
 }
 
 .nav_link {
-  color: var(--color-dark-s, rgba(205, 205, 205, 1));
+  color: var(--color-dark-s);
 
   font-family: "Arial";
   font-size: 15px;
@@ -90,12 +98,12 @@ header {
 }
 
 .nav_link:hover {
-  color: var(--color-light-s, rgba(250, 250, 250, 1));
+  color: var(--color-light-s);
 }
 
 .nav_link_active {
-  color: var(--color-light-s, rgba(250, 250, 250, 1));
-  border-bottom: 3px solid var(--color-primary, rgba(241, 205, 179, 1));
+  color: var(--color-light-s);
+  border-bottom: 3px solid var(--color-primary);
   padding-bottom: 3px;
   pointer-events: none;
   cursor: default;
@@ -125,7 +133,7 @@ header {
 }
 
 .start_screen_title {
-  color: var(--color-light-xl, rgba(255, 255, 255, 1));
+  color: var(--color-light-xl);
 
   font-family: "Georgia";
   font-size: 44px;
@@ -135,7 +143,7 @@ header {
 }
 
 .start_screen_content_left p {
-  color: var(--color-dark-s, rgba(205, 205, 205, 1));
+  color: var(--color-dark-s);
 
   font-family: "Arial";
   font-size: 15px;
@@ -166,7 +174,7 @@ header {
 }
 
 .section_title {
-  color: var(--color-dark-l, rgba(84, 84, 84, 1));
+  color: var(--color-dark-l);
 
   font-family: "Georgia";
   font-size: 35px;
@@ -176,7 +184,7 @@ header {
 }
 
 .subheading_dark {
-  color: var(--color-dark-xl, rgba(76, 76, 76, 1));
+  color: var(--color-dark-xl);
 
   font-family: "Arial";
   font-size: 15px;
@@ -187,7 +195,7 @@ header {
 
 /* Pets */
 .pets {
-  background-color: var(--color-light-l, rgba(246, 246, 246, 1));
+  background-color: var(--color-light-l);
 }
 
 .pets_content {
@@ -219,12 +227,12 @@ header {
   height: 435px;
   align-items: center;
   border-radius: 9px;
-  background: var(--color-light-s, rgba(250, 250, 250, 1));
+  background: var(--color-light-s);
   transition: all 0.3s ease;
 }
 
 .card_title {
-  color: var(--color-dark-l, rgba(84, 84, 84, 1));
+  color: var(--color-dark-l);
   font-family: "Georgia", serif;
   font-size: 20px;
   font-weight: 400;
@@ -234,10 +242,10 @@ header {
 
 .pet_card_btn {
   padding: 15px 45px;
-  border: 2px solid var(--color-primary, rgba(241, 205, 179, 1));
+  border: 2px solid var(--color-primary);
   border-radius: 100px;
-  background: var(--color-light-s, rgba(250, 250, 250, 1));
-  color: var(--color-dark-3xl, rgba(41, 41, 41, 1));
+  background: var(--color-light-s);
+  color: var(--color-dark-3xl);
 
   font-family: "Georgia";
   font-size: 17px;
@@ -250,12 +258,12 @@ header {
 }
 
 .pet_card:hover {
-  background-color: var(--color-light-xl, rgba(255, 255, 255, 1));
+  background-color: var(--color-light-xl);
 }
 
 .pet_card:hover .pet_card_btn {
-  background: var(--color-primary-light, rgba(253, 220, 196, 1));
-  border: 2px solid var(--color-primary-light, rgba(253, 220, 196, 1));
+  background: var(--color-primary-light);
+  border: 2px solid var(--color-primary-light);
 }
 
 .btn_primary {
@@ -263,8 +271,8 @@ header {
 
   padding: 15px 45px;
   border-radius: 100px;
-  background: var(--color-primary, rgba(241, 205, 179, 1));
-  color: var(--color-dark-3xl, rgba(41, 41, 41, 1));
+  background: var(--color-primary);
+  color: var(--color-dark-3xl);
 
   font-family: "Georgia";
   font-size: 17px;
@@ -275,15 +283,15 @@ header {
 }
 
 .btn_primary:hover {
-  background-color: var(--color-primary-light, rgba(253, 220, 196, 1));
+  background-color: var(--color-primary-light);
 }
 
 .slider_btn {
   box-sizing: border-box;
   width: 52px;
   height: 52px;
-  border: 2px solid var(--color-primary, rgba(241, 205, 179, 1));
-  background: var(--color-light-s, rgba(250, 250, 250, 1));
+  border: 2px solid var(--color-primary);
+  background: var(--color-light-s);
   border-radius: 100px;
 
   display: flex;
@@ -296,8 +304,8 @@ header {
 }
 
 .slider_btn:hover {
-  background-color: var(--color-primary-light, rgba(253, 220, 196, 1));
-  border-color: var(--color-primary-light, rgba(253, 220, 196, 1));
+  background-color: var(--color-primary-light);
+  border-color: var(--color-primary-light);
 }
 
 /* Help */
@@ -328,7 +336,7 @@ header {
 }
 
 .help_item_title {
-  color: var(--color-dark-l, rgba(84, 84, 84, 1));
+  color: var(--color-dark-l);
   font-family: "Georgia";
   font-size: 20px;
   font-weight: 400;
@@ -339,7 +347,7 @@ header {
 /* Donation */
 
 .donation {
-  background: var(--color-light-l, rgba(246, 246, 246, 1));
+  background: var(--color-light-l);
 }
 
 .donation_content {
@@ -357,7 +365,7 @@ header {
 }
 
 .donation_subheading {
-  color: var(--color-dark-l, rgba(84, 84, 84, 1));
+  color: var(--color-dark-l);
 
   font-family: "Georgia";
   font-size: 15px;
@@ -368,7 +376,7 @@ header {
 
 .credit_card {
   border-radius: 9px;
-  background: var(--color-primary, rgba(241, 205, 179, 1));
+  background: var(--color-primary);
   cursor: pointer;
 }
 
@@ -380,7 +388,7 @@ header {
 }
 
 .credit_card_numbers {
-  color: var(--color-dark-l, rgba(84, 84, 84, 1));
+  color: var(--color-dark-l);
 
   font-family: "Georgia";
   font-size: 20px;
@@ -390,7 +398,7 @@ header {
 }
 
 .subheading_light {
-  color: var(--color-dark-m, rgba(178, 178, 178, 1));
+  color: var(--color-dark-m);
 
   font-family: "Arial";
   font-style: Italic;
@@ -416,7 +424,7 @@ footer {
 }
 
 .footer_section_title {
-  color: var(--color-light-xl, rgba(255, 255, 255, 1));
+  color: var(--color-light-xl);
 }
 
 .footer_contacts {
@@ -434,7 +442,7 @@ footer {
 }
 
 .footer_contacts_title {
-  color: var(--color-primary, rgba(241, 205, 179, 1));
+  color: var(--color-primary);
   font-family: "Georgia";
   font-size: 20px;
   font-weight: 400;
@@ -457,15 +465,15 @@ footer {
 }
 
 .header_light span {
-  color: var(--color-dark-l, rgba(84, 84, 84, 1));
+  color: var(--color-dark-l);
 }
 
 .header_light .header_logo p {
-  color: var(--color-dark-3xl, rgba(41, 41, 41, 1));
+  color: var(--color-dark-3xl);
 }
 
 .header_light .nav_link {
-  color: var(--color-dark-l, rgba(84, 84, 84, 1));
+  color: var(--color-dark-l);
 }
 
 .header_light .nav_link:hover {
@@ -477,7 +485,7 @@ footer {
 }
 
 .our_pets {
-  background: var(--color-light-l, rgba(246, 246, 246, 1));
+  background: var(--color-light-l);
   padding-top: 120px;
 }
 
@@ -514,7 +522,7 @@ footer {
   border: 2px solid var(--color-primary, #f1cdb3);
   background-color: transparent;
 
-  color: var(--color-dark-3xl, rgba(41, 41, 41, 1));
+  color: var(--color-dark-3xl);
   font-family: "Georgia";
   font-size: 20px;
   font-weight: 400;
@@ -540,3 +548,4 @@ footer {
   cursor: default;
   pointer-events: none;
 }
+
