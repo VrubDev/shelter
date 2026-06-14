@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "@awmottaz/prettier-plugin-void-html": "^2.1.0"
+  }
+}
