@@ -156,6 +156,61 @@ header {
   align-self: flex-start;
 }
 
+@media (max-width: 1030px) {
+  .start_screen {
+    padding-top: 150px;
+  }
+  .start_screen_content {
+    flex-direction: column;
+    gap: 100px;
+    margin: 0px 100px 0 99px;
+  }
+
+  .start_screen_content_left {
+    padding-top: 0;
+    margin: 0 54px 0 55px;
+  }
+
+  .start_screen_button {
+    align-self: center;
+  }
+
+  .start_screen_img {
+    position: relative;
+    left: 70px;
+  }
+}
+
+@media (max-width: 550px) {
+  .start_screen_content {
+    gap: 105px;
+    margin: 0px 10px 0 10px;
+  }
+
+  .start_screen_content_left {
+    padding-top: 0;
+    margin: 0;
+  }
+
+  .start_screen_title {
+    font-family: "Georgia";
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    text-align: center;
+  }
+
+  .start_screen_content_left p {
+    text-align: center;
+  }
+
+  .start_screen_img {
+    position: static;
+    padding-left: 40px;
+  }
+}
+
 /* About */
 
 .about_content {
