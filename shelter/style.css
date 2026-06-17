@@ -224,6 +224,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 25px;
+  width: 100%;
   max-width: 430px;
   align-self: center;
 }
@@ -246,6 +247,42 @@ header {
   font-weight: 400;
   line-height: 160%;
   letter-spacing: 0px;
+}
+
+@media (max-width: 1030px) {
+  .about_content {
+    flex-direction: column-reverse;
+    gap: 80px;
+  }
+
+  .about_img {
+    padding: 0 68px 0 69px;
+  }
+}
+
+@media (max-width: 550px) {
+  .about_content {
+    gap: 42px;
+    padding: 42px 10px;
+  }
+
+  .about_img {
+    padding: 0;
+  }
+
+  .about_content_right {
+    gap: 22px;
+  }
+
+  .about_content_right h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .about_content_right p {
+    text-align: justify;
+    padding: 0 15px;
+  }
 }
 
 /* Pets */
