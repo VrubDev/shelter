@@ -549,6 +549,68 @@ footer {
   gap: 20px;
 }
 
+@media (max-width: 1030px) {
+  .footer_content {
+    flex-wrap: wrap;
+    row-gap: 65px;
+    column-gap: 61px;
+    padding: 30px 30px 0 30px;
+    justify-content: flex-start;
+  }
+  .footer_contacts,
+  .footer_locations {
+    padding-top: 0;
+  }
+  .footer_contacts {
+    padding-left: 34px;
+  }
+  .footer_locations {
+    padding-right: 34px;
+  }
+  .footer_img {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 550px) {
+  .footer_content {
+    flex-direction: column;
+    gap: 40px;
+    padding: 30px 10px 0 10px;
+    justify-content: center;
+  }
+  .footer_section_title {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .footer_section_title br {
+    display: none;
+  }
+  .footer_contacts {
+    align-items: center;
+    padding-left: 0;
+  }
+  .footer_locations {
+    gap: 40px;
+    padding-right: 0;
+  }
+
+  .footer_locations .footer_section_title {
+    padding: 0 15px;
+  }
+
+  .footer_img {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .footer_img img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
 /* Our pets page */
 
 .header_light {
