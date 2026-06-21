@@ -518,6 +518,50 @@ header {
   letter-spacing: 0.06em;
 }
 
+@media (max-width: 1030px) {
+  .help_content {
+    padding: 80px 69px 100px 69px;
+  }
+  .help_list {
+    justify-content: space-between;
+    column-gap: 60px;
+    row-gap: 55px;
+  }
+  .help_list_item img {
+    padding: 0 55px;
+  }
+}
+
+@media (max-width: 550px) {
+  .help_content {
+    gap: 42px;
+    padding: 42px 15px;
+  }
+
+  .help_content h2 {
+    font-size: 25px;
+  }
+  .help_list {
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+
+  .help_list_item {
+    width: 130px;
+    gap: 20px;
+  }
+  .help_list_item img {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+  }
+
+  .help_list_item p {
+    font-size: 15px;
+    line-height: 110%;
+  }
+}
+
 /* Donation */
 
 .donation {
