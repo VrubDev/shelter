@@ -874,3 +874,43 @@ footer {
   pointer-events: none;
 }
 
+@media (max-width: 1030px) {
+  .our_pets_content {
+    gap: 30px;
+    padding: 60px 30px 70px 30px;
+  }
+  .our_pets_content .section_title {
+    padding-top: 20px;
+  }
+
+  .pet_card:nth-child(7),
+  .pet_card:nth-child(8) {
+    display: none;
+  }
+  .pagination {
+    margin-top: 10px;
+    margin-bottom: 6px;
+  }
+}
+
+@media (max-width: 640px) {
+  .pet_card:nth-child(4),
+  .pet_card:nth-child(5),
+  .pet_card:nth-child(6) {
+    display: none;
+  }
+  .our_pets_content {
+    padding: 42px 10px;
+    gap: 42px;
+  }
+
+  .our_pets_content .section_title {
+    font-size: 25px;
+    padding-top: 0;
+  }
+  .pagination {
+    gap: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
