@@ -440,6 +440,48 @@ header {
   border-color: var(--color-primary-light);
 }
 
+@media (max-width: 1220px) {
+  .slider_wrapper {
+    gap: 12px;
+  }
+  .slider_track {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .slider_track .pet_card:nth-child(3) {
+    display: none;
+  }
+}
+
+@media (max-width: 730px) {
+  .slider_track .pet_card:nth-child(2) {
+    display: none;
+  }
+  .pets_content .section_title {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 430px) {
+  .pets_content {
+    padding: 42px 10px;
+    gap: 42px;
+  }
+  .slider_wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 80px;
+    row-gap: 20px;
+  }
+  .slider_track {
+    width: 100%;
+    order: -1;
+    justify-content: center;
+  }
+}
+
 /* Help */
 .help_content {
   display: flex;
@@ -695,6 +737,7 @@ footer {
 .pets {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   column-gap: 40px;
   row-gap: 30px;
 }
