@@ -126,11 +126,17 @@
               </article>
             </div>
             <div class="pagination">
-              <button class="pagination_btn" disabled>&lt;&lt;</button>
-              <button class="pagination_btn" disabled>&lt;</button>
-              <button class="pagination_btn pagination_btn_active">1</button>
-              <button class="pagination_btn">&gt;</button>
-              <button class="pagination_btn">&gt;&gt;</button>
+              <button class="pagination_btn btn_first" disabled>
+                &lt;&lt;
+              </button>
+              <button class="pagination_btn btn_prev" disabled>&lt;</button>
+              <button
+                class="pagination_btn btn_page_number pagination_btn_active"
+              >
+                1
+              </button>
+              <button class="pagination_btn btn_next">&gt;</button>
+              <button class="pagination_btn btn_last">&gt;&gt;</button>
             </div>
           </div>
         </div>
@@ -184,6 +190,8 @@
         </div>
       </div>
     </footer>
+    <div class="overlay"></div>
     <script src="./index.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
