@@ -872,6 +872,10 @@ footer {
   pointer-events: auto;
 }
 
+.popup {
+  display: none;
+}
+
 .popup_content_pet {
   display: flex;
   border-radius: 9px;
