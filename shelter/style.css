@@ -872,6 +872,21 @@ footer {
   pointer-events: auto;
 }
 
+.popup_content_pet {
+  display: flex;
+  border-radius: 9px;
+  background: var(--color-light-s);
+  max-width: 900px;
+}
+.pet_info {
+  display: flex;
+  flex-direction: column;
+  padding: 102px 72px 88px 0;
+}
+.popup_list {
+  margin-top: 40px;
+}
+
 /* Our pets page */
 
 .header_light {
