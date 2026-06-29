@@ -872,8 +872,29 @@ footer {
   pointer-events: auto;
 }
 
+/* Popup Modal*/
 .popup {
   display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(41, 41, 41, 0.6);
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.popup.open {
+  display: flex;
+}
+
+.popup_content {
+  position: relative;
+  max-width: 900px;
+  width: 100%;
 }
 
 .popup_content_pet {
@@ -881,14 +902,169 @@ footer {
   border-radius: 9px;
   background: var(--color-light-s);
   max-width: 900px;
+  overflow: hidden;
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
+
+.popup_img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+
 .pet_info {
   display: flex;
   flex-direction: column;
-  padding: 102px 72px 88px 0;
+  padding: 50px 20px 50px 29px;
+  width: 100%;
 }
+
+.popup_title {
+  color: #000000;
+  font-family: "Georgia";
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  margin-bottom: 10px;
+}
+
+.popup_subtitle {
+  color: #000000;
+  font-family: "Georgia";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  margin-bottom: 40px;
+}
+
+.popup_description {
+  color: #000000;
+  font-family: "Georgia";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  margin-bottom: 40px;
+}
+
 .popup_list {
-  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.popup_list li {
+  font-family: "Georgia";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: #000000;
+  padding-left: 15px;
+  position: relative;
+}
+
+.popup_list li::before {
+  content: "•";
+  color: var(--color-primary);
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.2em;
+}
+
+.popup_list li strong {
+  font-weight: 700;
+}
+
+.popup_close_btn {
+  position: absolute;
+  top: -52px;
+  right: -52px;
+  width: 52px;
+  height: 52px;
+  border: 2px solid var(--color-primary);
+  background-color: transparent;
+  border-radius: 50%;
+  font-family: "Georgia";
+  font-size: 20px;
+  color: #292929;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.popup_close_btn:hover {
+  background-color: var(--color-primary-light);
+  border-color: var(--color-primary-light);
+}
+
+@media (max-width: 950px) {
+  .popup_close_btn {
+    right: -30px;
+  }
+}
+
+@media (max-width: 860px) {
+  .popup_content_pet {
+    max-width: 630px;
+  }
+  .popup_img {
+    width: 350px;
+    height: 350px;
+  }
+  .pet_info {
+    padding: 30px 10px 30px 20px;
+  }
+  .popup_title {
+    font-size: 30px;
+  }
+  .popup_subtitle {
+    margin-bottom: 20px;
+  }
+  .popup_description {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+  .popup_list {
+    gap: 8px;
+  }
+  .popup_list li {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 650px) {
+  .popup_content {
+    max-width: 240px;
+    margin: 0 auto;
+  }
+  .popup_content_pet {
+    flex-direction: column;
+    max-width: 240px;
+  }
+  .popup_img {
+    display: none;
+  }
+  .pet_info {
+    padding: 10px;
+  }
+  .popup_title {
+    text-align: center;
+  }
+  .popup_subtitle {
+    text-align: center;
+  }
+  .popup_description {
+    text-align: justify;
+  }
+  .popup_close_btn {
+    right: -30px;
+  }
 }
 
 /* Our pets page */
